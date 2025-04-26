@@ -12,8 +12,11 @@ const port = process.env.PORT || 8000;
 app.use(cors());
 app.use(express.json());
 
-app.get("/test",(req,res)=>{
+app.get("/",(req,res)=>{
     res.json("server started successfully with jenkins pipeline")
+})
+app.get("/test",(req,res)=>{
+    res.json("test is test route")
 })
 
 app.use(router);
