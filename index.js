@@ -16,7 +16,7 @@ app.get("/",(req,res)=>{
     res.json("server started successfully with jenkins pipeline")
 })
 app.get("/test",(req,res)=>{
-    res.json("test is test route")
+    res.json("test is test route for jenkins pipeline")
 })
 
 app.use(router);
