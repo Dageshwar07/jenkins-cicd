@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/test",(req,res)=>{
-    res.json("server started successfully with jenkins pipeline")
+    res.json("server started successfully with jenkins")
 })
 
 app.use(router);
